@@ -8,7 +8,7 @@ $(document).ready(function() {
     var sideB = parseInt($("input#sideBB").val());
     var sideC = parseInt($("input#sideCC").val());
 
-    if ((sideA + sideB <= sideC) || (sideA+sideC<sideB) || (sideC+sideB<sideA)){
+    if ((sideA + sideB <= sideC) || (sideA+sideC<=sideB) || (sideC+sideB<=sideA)){
       $("#output").text("Not A Triangle");
     } else if ((sideA === sideB) && (sideA === sideC) && (sideB === sideC)) {
       $("#output").text("Equilateral");
